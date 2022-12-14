@@ -1,0 +1,52 @@
+V "GNAT Lib v9"
+A -gnaty
+A -gnata
+A -m32
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U activity%b		activity.adb		491ad338 NE OO PK
+
+U activity%s		activity.ads		ec5517ea EE NE OO PK
+W apex%s		apex.ads		apex.ali
+W apex.timing%s		apex-timing.ads		apex-timing.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D activity.ads		20221213065336 9f71955e activity%s
+D activity.adb		20221213065336 d66b4666 activity%b
+D ada.ads		20210601075304 76789da1 ada%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D apex.ads		20221213065336 ed5a6e67 apex%s
+D apex-timing.ads	20221213065336 ca5ffd48 apex.timing%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-c.ads		20210601075304 5421119b interfaces.c%s
+D system.ads		20210601075304 4635ec04 system%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+X 1 activity.ads
+21K9*Activity 23l5 23e13 2|13b14 25l5 25t13
+22U14*Thr1_Job 2|17b14 24l8 24t16
+X 2 activity.adb
+14U14 Printf 14>22 15b<c,printf>22 21s10
+14a22 String{8|79A9}
+18e7 Ret{5|71E9} 22m28
+X 5 apex.ads
+30K9*APEX 1|15w6 16r5 17r6 18r5 5|101e9
+71E9*Return_Code_Type 2|18r13 5|78e17
+X 6 apex-timing.ads
+18K14*Timing 1|17w11 18r10 6|36e16
+19U14*Timed_Wait 2|22s10
+X 7 interfac.ads
+38K9*Interfaces 1|19r6 2|14r34 7|184e15
+X 8 i-c.ads
+18K20*C 1|19w17 2|14r45 8|230e17
+72E9*char<character>
+79A9*char_array(72E9)<60M9> 2|14r47
+

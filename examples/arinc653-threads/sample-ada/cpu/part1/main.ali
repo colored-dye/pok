@@ -1,0 +1,86 @@
+V "GNAT Lib v9"
+A -gnaty
+A -gnata
+A -m32
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		bef05b6c NE OO PK
+Z system%s		system.ads		system.ali
+
+U main%s		main.ads		7e019707 EE NE OO PK
+W activity%s		activity.adb		activity.ali
+W apex%s		apex.ads		apex.ali
+W apex.partitions%s	apex-partitions.ads	apex-partitions.ali
+W apex.processes%s	apex-processes.ads	apex-processes.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D activity.ads		20221213065336 9f71955e activity%s
+D ada.ads		20210601075304 76789da1 ada%s
+D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
+D apex.ads		20221213065336 ed5a6e67 apex%s
+D apex-partitions.ads	20221213065336 ad9af941 apex.partitions%s
+D apex-processes.ads	20221213065336 e050de7e apex.processes%s
+D apex-timing.ads	20221213065336 ca5ffd48 apex.timing%s
+D interfac.ads		20210601075304 5ab55268 interfaces%s
+D i-c.ads		20210601075304 5421119b interfaces.c%s
+D main.ads		20221213065336 15c15a9a main%s
+D main.adb		20221213065336 ab3101f6 main%b
+D system.ads		20210601075304 4635ec04 system%s
+D s-exctab.ads		20210601075304 54135002 system.exception_table%s
+D s-parame.ads		20210601075304 48ec542b system.parameters%s
+D s-stalib.ads		20210601075304 09bd3940 system.standard_library%s
+X 1 activity.ads
+21K9*Activity 23e13 10|22w6
+X 4 apex.ads
+30K9*APEX 101e9 10|16w6 17r5 18r6 19r5 20r6 21r5
+63I9*APEX_Integer<9|37I9>
+64M9*APEX_Unsigned<9|45M9>
+65I9*APEX_Long_Integer<8|55I9>
+71E9*Return_Code_Type 78e17 11|25r13
+82M12*System_Address_Type{12|67M9}
+92I12*System_Time_Type{65I9}
+X 5 apex-partitions.ads
+19K14*Partitions 54e20 10|20w11 21r10
+21n63*Normal{21E9} 11|35r27
+40U14*Set_Partition_Mode 11|35s7
+X 6 apex-processes.ads
+18K14*Processes 118e19 10|18w11 19r10
+24I9*Process_Id_Type<4|63I9> 11|27r12
+27M12*Stack_Size_Type{4|64M9}
+33n27*Soft{33E9} 11|30r25
+34R9*Process_Attribute_Type 42e14 11|26r14
+35i8*Period{4|92I12} 11|29m12
+36i8*Time_Capacity{4|92I12} 11|31m12
+37m8*Entry_Point{4|82M12} 11|33m12
+38m8*Stack_Size{27M12} 11|32m12
+40e8*Deadline{33E9} 11|30m12
+49U14*Create_Process 11|34s7
+X 8 interfac.ads
+38K9*Interfaces 184e15 10|15r6 11|14r34
+55I9*Integer_64<long_long_integer>
+X 9 i-c.ads
+18K20*C 230e17 10|15w17 11|14r45
+37I9*long<integer>
+45M9*unsigned_long
+72E9*char<character>
+79A9*char_array(72E9)<60M9> 11|14r47
+X 10 main.ads
+24K9*Main 28l5 28e9 11|13b14 37l5 37t9
+25U14*Compute 11|17b14 22l8 22t15 33r27
+26U14*Main 27i<c,main>22 11|24b14 36l8 36t12
+X 11 main.adb
+14U14 Printf 14>22 15b<c,printf>22 20s10
+14a22 String{9|79A9}
+25e7 Ret{4|71E9} 34m33 35m35
+26r7 Attr{6|34R9} 29m7 30m7 31m7 32m7 33m7 34r23
+27i7 Id{6|24I9} 34m29
+X 12 system.ads
+67M9*Address
+

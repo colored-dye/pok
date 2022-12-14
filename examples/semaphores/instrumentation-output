@@ -1,0 +1,258 @@
+
+Multiprocessing init
+Bus entry:
+Bus ID: 0
+Bus Type: PCI   
+
+Bus entry:
+Bus ID: 1
+Bus Type: ISA   
+
+IO APIC at fec00000
+LAPIC: b000c00 30b000c
+IO APIC interrupt:
+Type: 0
+Flags: 1
+Bus ID: 0
+Bus IRQ: 4
+APIC: 0
+IDINTin: 9
+
+IO APIC interrupt:
+Type: 0
+Flags: 1
+Bus ID: 0
+Bus IRQ: c
+APIC: 0
+IDINTin: b
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 0
+APIC: 0
+IDINTin: 2
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 1
+APIC: 0
+IDINTin: 1
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 3
+APIC: 0
+IDINTin: 3
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 4
+APIC: 0
+IDINTin: 4
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 6
+APIC: 0
+IDINTin: 6
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 7
+APIC: 0
+IDINTin: 7
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: 8
+APIC: 0
+IDINTin: 8
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: c
+APIC: 0
+IDINTin: c
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: d
+APIC: 0
+IDINTin: d
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: e
+APIC: 0
+IDINTin: e
+
+IO APIC interrupt:
+Type: 0
+Flags: 0
+Bus ID: 1
+Bus IRQ: f
+APIC: 0
+IDINTin: f
+
+LAPIC interrupt:
+Type: 3
+Flags: 0
+Bus ID: 1
+Bus IRQ: 0
+APIC: 0
+IDINTin: 0
+
+LAPIC interrupt:
+Type: 1
+Flags: 0
+Bus ID: 1
+Bus IRQ: 0
+APIC: ff
+IDINTin: 1
+
+[INSTRUMENTATION][CHEDDAR][ARCHI] <address_spaces>
+[INSTRUMENTATION][CHEDDAR][ARCHI] <address_space>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <name>partition0</name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <cpu_name>pokkernel</cpu_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <text_memory_size> 0</text_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <stack_memory_size> 0</stack_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <data_memory_size> 0</data_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <heap_memory_size> 0</heap_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <scheduler quantum= "0">[INSTRUMENTATION][CHEDDAR][ARCHI]    POSIX_1003_HIGHEST_PRIORITY_FIRST_PROTOCOL </scheduler>
+[INSTRUMENTATION][CHEDDAR][ARCHI] </address_space>
+[INSTRUMENTATION][CHEDDAR][ARCHI] <address_space>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <name>partition1</name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <cpu_name>pokkernel</cpu_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <text_memory_size> 0</text_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <stack_memory_size> 0</stack_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <data_memory_size> 0</data_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <heap_memory_size> 0</heap_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <scheduler quantum= "0">[INSTRUMENTATION][CHEDDAR][ARCHI]    POSIX_1003_HIGHEST_PRIORITY_FIRST_PROTOCOL </scheduler>
+[INSTRUMENTATION][CHEDDAR][ARCHI] </address_space>
+POK kernel initialized
+[INSTRUMENTATION][CHEDDAR] <event_table>
+[INSTRUMENTATION][CHEDDAR] <processor>
+[INSTRUMENTATION][CHEDDAR] <name>pok_kernel</name>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 0</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 1</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 2</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 3</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 4</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 5</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 6</task_activation>
+[P1] pok_sem_create return=0, mid=0
+[INSTRUMENTATION][CHEDDAR][ARCHI] </address_spaces>
+[INSTRUMENTATION][CHEDDAR][ARCHI] <tasks>
+[INSTRUMENTATION][CHEDDAR][ARCHI] <task task_type="PERIODIC_TYPE">
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <cpu_name>pokkernel</cpu_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <address_space_name>partition0</address_space_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <address_space_name>partition0</address_space_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <name>task1</name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <capacity>144115242954129420</capacity>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <start_time>0</start_time>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <policy>SCHED_FIFO</policy>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <deadline>-6152145789373120500</deadline>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <criticality>0</criticality>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <context_switch_overhead>0</context_switch_overhead>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <blocking_time>0</blocking_time>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <priority>1</priority>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <text_memory_size>0</text_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <stack_memory_size>0</stack_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <period>-8358680856440602624</period>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <jitter>0</jitter>
+[INSTRUMENTATION][CHEDDAR][ARCHI] </task>
+[P1] pok_thread_create (1) return=0
+[INSTRUMENTATION][CHEDDAR][ARCHI] <task task_type="PERIODIC_TYPE">
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <cpu_name>pokkernel</cpu_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <address_space_name>partition0</address_space_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <address_space_name>partition0</address_space_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <name>task2</name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <capacity>144115242954129420</capacity>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <start_time>0</start_time>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <policy>SCHED_FIFO</policy>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <deadline>-6152145789373120500</deadline>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <criticality>0</criticality>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <context_switch_overhead>0</context_switch_overhead>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <blocking_time>0</blocking_time>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <priority>1</priority>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <text_memory_size>0</text_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <stack_memory_size>0</stack_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <period>-8358680856440602624</period>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <jitter>0</jitter>
+[INSTRUMENTATION][CHEDDAR][ARCHI] </task>
+[P1] pok_thread_create (2) return=0
+--- Scheduling processor: 0
+    scheduling thread 2 (priority 42)
+    other ready:  1 (40)
+    non-ready: 0 (1/stopped)
+[INSTRUMENTATION][CHEDDAR][EVENTS] <running_task>   1263003  task2</running_task>
+P1T2: I will wait for the semaphores
+--- Scheduling processor: 0
+    scheduling thread 1 (priority 40)
+    non-ready: 0 (1/stopped), 2 (42/lock)
+[INSTRUMENTATION][CHEDDAR][EVENTS] <running_task>   1263003  task1</running_task>
+P1T1: I will signal semaphores
+--- Scheduling processor: 0
+    scheduling thread 2 (priority 42)
+    other ready:  1 (40)
+    non-ready: 0 (1/stopped)
+[INSTRUMENTATION][CHEDDAR][EVENTS] <running_task>   1263003  task2</running_task>
+P1T2: pok_sem_wait, ret=0
+--- Scheduling processor: 0
+    scheduling thread 1 (priority 40)
+    non-ready: 0 (1/stopped), 2 (42/lock)
+[INSTRUMENTATION][CHEDDAR][EVENTS] <running_task>   1290660  task1</running_task>
+P1T1: pok_sem_signal, ret=0
+--- Scheduling processor: 0
+    scheduling idle thread
+    non-ready: 0 (1/stopped), 1 (40/waiting), 2 (42/lock)
+[INSTRUMENTATION][CHEDDAR][ARCHI] <task task_type="PERIODIC_TYPE">
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <cpu_name>pokkernel</cpu_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <address_space_name>partition1</address_space_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <address_space_name>partition1</address_space_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <name>task4</name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <capacity>-1</capacity>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <start_time>0</start_time>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <policy>SCHED_FIFO</policy>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <deadline>0</deadline>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <criticality>0</criticality>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <context_switch_overhead>0</context_switch_overhead>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <blocking_time>0</blocking_time>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <priority>1</priority>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <text_memory_size>0</text_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <stack_memory_size>0</stack_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <period>-1</period>
+[INSTRUMENTATION][CHEDDAR][ARCHI]     <jitter>0</jitter>
+[INSTRUMENTATION][CHEDDAR][ARCHI] </task>
+[P2] thread create returns=0
+--- scheduling partition: 1, low:3, high:5
+--- Scheduling processor: 0
+    scheduling thread 4 (priority 42)
+elected 4 !!! 
+    non-ready: 3 (1/stopped)
+[INSTRUMENTATION][CHEDDAR][EVENTS] <running_task>   2000366277  task4</running_task>
+P2T1: begin of task
+--- scheduling partition: 1, low:3, high:5
+--- Scheduling processor: 0
+    scheduling idle thread
+    non-ready: 3 (1/stopped), 4 (42/waiting)

@@ -1,0 +1,325 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+                              main.o (pok_do_syscall)
+/home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                              main.o (pok_sem_create)
+/home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                              main.o (printf)
+
+Merging program properties
+
+
+Allocating common symbols
+Common symbol       size              file
+
+pok_allocator_memspace
+                    0x4000            /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+pok_error_reported  0x640             /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+errno               0x4               /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+val                 0x1               activity.o
+pok_allocator_spaces
+                    0x4b0             /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+sid                 0x1               main.o
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 activity.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.si
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                __partition_begin = .
+
+.text           0x0000000000000000     0x192f
+ *(.text)
+ .text          0x0000000000000000      0x128 main.o
+                0x0000000000000000                main
+ .text          0x0000000000000128       0xcf activity.o
+                0x0000000000000128                pinger_job
+                0x000000000000017e                pinger_job2
+ .text          0x00000000000001f7       0x28 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+                0x00000000000001f7                pok_arch_idle
+                0x00000000000001fe                pok_do_syscall
+                0x0000000000000213                pok_division_by_zero_error
+ .text          0x000000000000021f      0xa42 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                0x000000000000021f                pok_allocator_allocate
+                0x0000000000000363                pok_allocator_delete_space
+                0x00000000000003af                pok_allocator_merge_space
+                0x0000000000000496                pok_allocator_free
+                0x000000000000056b                pok_time_gettick
+                0x00000000000005bf                pok_time_get
+                0x00000000000005d3                pok_error_log
+                0x000000000000061f                pok_error_get
+                0x0000000000000676                pok_error_raise_application_error
+                0x00000000000006cd                pok_error_handler_create
+                0x0000000000000726                pok_error_handler_worker
+                0x000000000000078a                pok_error_ignore
+                0x00000000000007af                pok_error_confirm
+                0x00000000000007d4                __pok_partition_start
+                0x00000000000007f6                pok_sem_create
+                0x000000000000087a                pok_sem_signal
+                0x00000000000008e5                pok_sem_status
+                0x00000000000008ef                pok_sem_wait
+                0x0000000000000975                pok_thread_create
+                0x00000000000009c9                pok_thread_attr_init
+                0x0000000000000a15                pok_thread_period
+                0x0000000000000a69                pok_thread_sleep
+                0x0000000000000abd                pok_thread_status
+                0x0000000000000b11                pok_thread_delayed_start
+                0x0000000000000b65                pok_thread_id
+                0x0000000000000bb9                pok_thread_set_priority
+                0x0000000000000c0d                pok_thread_resume
+ .text          0x0000000000000c61      0xcce /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                0x0000000000001004                vprintf
+                0x00000000000013d7                printf
+                0x00000000000013f3                itoa
+                0x00000000000014b8                atoi
+                0x00000000000014ff                memcpy
+                0x000000000000152f                memset
+                0x0000000000001557                memcmp
+                0x00000000000015a0                strcmp
+                0x00000000000015e6                strncmp
+                0x0000000000001645                strcpy
+                0x000000000000167b                strncpy
+                0x00000000000016af                streq
+                0x0000000000001746                strlen
+                0x0000000000001768                __udivdi3
+                0x0000000000001830                __umoddi3
+                0x000000000000188b                rand
+                0x00000000000018c6                free
+                0x00000000000018e7                malloc
+                0x0000000000001908                calloc
+
+.text.__x86.get_pc_thunk.bx
+                0x000000000000192f        0x4
+ .text.__x86.get_pc_thunk.bx
+                0x000000000000192f        0x4 main.o
+                0x000000000000192f                __x86.get_pc_thunk.bx
+
+.iplt           0x0000000000001933        0x0
+ .iplt          0x0000000000001933        0x0 main.o
+
+.text.__x86.get_pc_thunk.si
+                0x0000000000001933        0x4
+ .text.__x86.get_pc_thunk.si
+                0x0000000000001933        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                0x0000000000001933                __x86.get_pc_thunk.si
+
+.text.__x86.get_pc_thunk.bp
+                0x0000000000001937        0x4
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000001937        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                0x0000000000001937                __x86.get_pc_thunk.bp
+
+.text.__x86.get_pc_thunk.ax
+                0x000000000000193b        0x4
+ .text.__x86.get_pc_thunk.ax
+                0x000000000000193b        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                0x000000000000193b                __x86.get_pc_thunk.ax
+
+.text.__x86.get_pc_thunk.cx
+                0x000000000000193f        0x4
+ .text.__x86.get_pc_thunk.cx
+                0x000000000000193f        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                0x000000000000193f                __x86.get_pc_thunk.cx
+
+.text.__x86.get_pc_thunk.di
+                0x0000000000001943        0x4
+ .text.__x86.get_pc_thunk.di
+                0x0000000000001943        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                0x0000000000001943                __x86.get_pc_thunk.di
+
+.rodata         0x0000000000001948      0x1dd
+ *(.rodata)
+ .rodata        0x0000000000001948      0x1dd /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.rodata.str1.4  0x0000000000001b28       0xbe
+ .rodata.str1.4
+                0x0000000000001b28       0x76 main.o
+ *fill*         0x0000000000001b9e        0x2 
+ .rodata.str1.4
+                0x0000000000001ba0       0x46 activity.o
+
+.eh_frame       0x0000000000001be8      0xb1c
+ .eh_frame      0x0000000000001be8       0x70 main.o
+ .eh_frame      0x0000000000001c58       0xa0 activity.o
+                                         0xcc (size before relaxing)
+ .eh_frame      0x0000000000001cf8       0x48 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+                                         0x90 (size before relaxing)
+ .eh_frame      0x0000000000001d40      0x494 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                                        0x6d0 (size before relaxing)
+ .eh_frame      0x00000000000021d4      0x530 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                                        0x6ec (size before relaxing)
+
+.rodata.str1.1  0x0000000000002704       0x3a
+ .rodata.str1.1
+                0x0000000000002704       0x3a activity.o
+
+.note.gnu.property
+                0x0000000000002740       0x1c
+ .note.gnu.property
+                0x0000000000002740       0x1c main.o
+
+.rel.dyn        0x000000000000275c        0x0
+ .rel.got       0x000000000000275c        0x0 main.o
+ .rel.iplt      0x000000000000275c        0x0 main.o
+ .rel.text      0x000000000000275c        0x0 main.o
+
+.data           0x0000000000002760     0x4b30
+ *(.data)
+ .data          0x0000000000002760        0x0 main.o
+ .data          0x0000000000002760        0x0 activity.o
+ .data          0x0000000000002760        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .data          0x0000000000002760        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .data          0x0000000000002760        0x4 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ *(.bss)
+ .bss           0x0000000000002764        0x0 main.o
+ .bss           0x0000000000002764        0x0 activity.o
+ .bss           0x0000000000002764        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .bss           0x0000000000002764        0xa /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                0x0000000000002764                pok_allocator_initialized
+                0x0000000000002768                pok_allocator_used_spaces
+                0x000000000000276c                pok_error_nb_reported
+ .bss           0x000000000000276e        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+ *(COMMON)
+ COMMON         0x000000000000276e        0x1 main.o
+                0x000000000000276e                sid
+ COMMON         0x000000000000276f        0x1 activity.o
+                0x000000000000276f                val
+ *fill*         0x0000000000002770       0x10 
+ COMMON         0x0000000000002780     0x4b10 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                0x0000000000002780                pok_allocator_memspace
+                0x0000000000006780                pok_error_reported
+                0x0000000000006dc0                errno
+                0x0000000000006de0                pok_allocator_spaces
+                0x0000000000007290                __partition_end = .
+LOAD main.o
+LOAD activity.o
+LOAD /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a
+LOAD /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok//libpok.a
+OUTPUT(pr1.elf elf32-i386)
+
+.got            0x0000000000007290        0x0
+ .got           0x0000000000007290        0x0 main.o
+
+.got.plt        0x0000000000007290        0xc
+ .got.plt       0x0000000000007290        0xc main.o
+                0x0000000000007290                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x000000000000729c        0x0
+ .igot.plt      0x000000000000729c        0x0 main.o
+
+.data.rel.ro.local
+                0x00000000000072a0       0x6c
+ .data.rel.ro.local
+                0x00000000000072a0       0x6c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_info     0x0000000000000000     0x6762
+ .debug_info    0x0000000000000000      0x48f main.o
+ .debug_info    0x000000000000048f      0x289 activity.o
+ .debug_info    0x0000000000000718      0x434 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .debug_info    0x0000000000000b4c     0x42d1 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .debug_info    0x0000000000004e1d     0x1945 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_abbrev   0x0000000000000000     0x25bc
+ .debug_abbrev  0x0000000000000000      0x11b main.o
+ .debug_abbrev  0x000000000000011b       0xec activity.o
+ .debug_abbrev  0x0000000000000207      0x17c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .debug_abbrev  0x0000000000000383     0x1557 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .debug_abbrev  0x00000000000018da      0xce2 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_loc      0x0000000000000000     0x16a5
+ .debug_loc     0x0000000000000000       0x83 main.o
+ .debug_loc     0x0000000000000083       0x53 activity.o
+ .debug_loc     0x00000000000000d6       0x41 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .debug_loc     0x0000000000000117      0x11c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .debug_loc     0x0000000000000233     0x1472 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_aranges  0x0000000000000000      0x5b0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 activity.o
+ .debug_aranges
+                0x0000000000000040       0x60 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .debug_aranges
+                0x00000000000000a0      0x2f8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .debug_aranges
+                0x0000000000000398      0x218 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_line     0x0000000000000000     0x2d81
+ .debug_line    0x0000000000000000      0x23c main.o
+ .debug_line    0x000000000000023c      0x264 activity.o
+ .debug_line    0x00000000000004a0      0x15d /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .debug_line    0x00000000000005fd     0x1582 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .debug_line    0x0000000000001b7f     0x1202 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_str      0x0000000000000000     0x15d3
+ .debug_str     0x0000000000000000      0x9c9 main.o
+                                        0xa0d (size before relaxing)
+ .debug_str     0x00000000000009c9       0x4f activity.o
+                                        0x43f (size before relaxing)
+ .debug_str     0x0000000000000a18       0xb0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+                                        0xc9e (size before relaxing)
+ .debug_str     0x0000000000000ac8      0x7b1 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+                                       0xabb8 (size before relaxing)
+ .debug_str     0x0000000000001279      0x35a /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+                                       0x1eb3 (size before relaxing)
+
+.comment        0x0000000000000000       0x2b
+ .comment       0x0000000000000000       0x2b main.o
+                                         0x2c (size before relaxing)
+ .comment       0x000000000000002b       0x2c activity.o
+ .comment       0x000000000000002b       0xdc /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .comment       0x000000000000002b      0x65c /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .comment       0x000000000000002b      0x2ec /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 activity.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(arch.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(core.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)
+
+.debug_ranges   0x0000000000000000       0xa8
+ .debug_ranges  0x0000000000000000       0xa8 /home/colored-dye/pok-new/examples/semaphores/pr1/../../../libpok/libpok.a(libc.lo)

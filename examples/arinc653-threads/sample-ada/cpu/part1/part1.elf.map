@@ -1,0 +1,346 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                              (__pok_partition_start)
+/home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                              main.o (printf)
+/home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+                              /home/colored-dye/pok-new/libpok/libpok.a(libc.lo) (pok_division_by_zero_error)
+
+Merging program properties
+
+Removed property 0xc0000002 to merge ../../../threadstart.o (0x3) and main.o (not found)
+Removed property 0xc0000002 to merge ../../../threadstart.o (not found) and ../../../hello1.o (0x3)
+Removed property 0xc0000002 to merge ../../../threadstart.o (not found) and /home/colored-dye/pok-new/libpok/libpok.a(core.lo) (0x3)
+Removed property 0xc0000002 to merge ../../../threadstart.o (not found) and /home/colored-dye/pok-new/libpok/libpok.a(libc.lo) (0x3)
+Removed property 0xc0000002 to merge ../../../threadstart.o (not found) and /home/colored-dye/pok-new/libpok/libpok.a(arch.lo) (0x3)
+
+Allocating common symbols
+Common symbol       size              file
+
+pok_allocator_memspace
+                    0x4000            /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+pok_error_reported  0x640             /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+errno               0x4               /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+pok_allocator_spaces
+                    0x4b0             /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 activity.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 activity.o
+ .group         0x0000000000000000        0x8 ../../../threadstart.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 ../../../threadstart.o
+ .note.gnu.property
+                0x0000000000000000       0x1c ../../../threadstart.o
+ .group         0x0000000000000000        0x8 ../../../hello1.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 ../../../hello1.o
+ .note.gnu.property
+                0x0000000000000000       0x1c ../../../hello1.o
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.si
+                0x0000000000000000        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                __partition_begin = .
+
+.text           0x0000000000000000     0x1866
+ *(.text)
+ .text          0x0000000000000000       0xa9 main.o
+                0x0000000000000000                main__compute
+                0x0000000000000026                main
+ *fill*         0x00000000000000a9        0x1 
+ .text          0x00000000000000aa       0x3c activity.o
+                0x00000000000000aa                activity__thr1_job
+ .text          0x00000000000000e6       0x24 ../../../threadstart.o
+                0x00000000000000e6                user_thread_starting
+ .text          0x000000000000010a       0x24 ../../../hello1.o
+                0x000000000000010a                user_hello_part1
+ .text          0x000000000000012e      0xa42 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                0x000000000000012e                pok_allocator_allocate
+                0x0000000000000272                pok_allocator_delete_space
+                0x00000000000002be                pok_allocator_merge_space
+                0x00000000000003a5                pok_allocator_free
+                0x000000000000047a                pok_time_gettick
+                0x00000000000004ce                pok_time_get
+                0x00000000000004e2                pok_error_log
+                0x000000000000052e                pok_error_get
+                0x0000000000000585                pok_error_raise_application_error
+                0x00000000000005dc                pok_error_handler_create
+                0x0000000000000635                pok_error_handler_worker
+                0x0000000000000699                pok_error_ignore
+                0x00000000000006be                pok_error_confirm
+                0x00000000000006e3                __pok_partition_start
+                0x0000000000000705                pok_sem_create
+                0x0000000000000789                pok_sem_signal
+                0x00000000000007f4                pok_sem_status
+                0x00000000000007fe                pok_sem_wait
+                0x0000000000000884                pok_thread_create
+                0x00000000000008d8                pok_thread_attr_init
+                0x0000000000000924                pok_thread_period
+                0x0000000000000978                pok_thread_sleep
+                0x00000000000009cc                pok_thread_status
+                0x0000000000000a20                pok_thread_delayed_start
+                0x0000000000000a74                pok_thread_id
+                0x0000000000000ac8                pok_thread_set_priority
+                0x0000000000000b1c                pok_thread_resume
+ .text          0x0000000000000b70      0xcce /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                0x0000000000000f13                vprintf
+                0x00000000000012e6                printf
+                0x0000000000001302                itoa
+                0x00000000000013c7                atoi
+                0x000000000000140e                memcpy
+                0x000000000000143e                memset
+                0x0000000000001466                memcmp
+                0x00000000000014af                strcmp
+                0x00000000000014f5                strncmp
+                0x0000000000001554                strcpy
+                0x000000000000158a                strncpy
+                0x00000000000015be                streq
+                0x0000000000001655                strlen
+                0x0000000000001677                __udivdi3
+                0x000000000000173f                __umoddi3
+                0x000000000000179a                rand
+                0x00000000000017d5                free
+                0x00000000000017f6                malloc
+                0x0000000000001817                calloc
+ .text          0x000000000000183e       0x28 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+                0x000000000000183e                pok_arch_idle
+                0x0000000000001845                pok_do_syscall
+                0x000000000000185a                pok_division_by_zero_error
+
+.text.__x86.get_pc_thunk.bx
+                0x0000000000001866        0x4
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000001866        0x4 main.o
+                0x0000000000001866                __x86.get_pc_thunk.bx
+
+.iplt           0x000000000000186a        0x0
+ .iplt          0x000000000000186a        0x0 main.o
+
+.text.__x86.get_pc_thunk.si
+                0x000000000000186a        0x4
+ .text.__x86.get_pc_thunk.si
+                0x000000000000186a        0x4 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                0x000000000000186a                __x86.get_pc_thunk.si
+
+.text.__x86.get_pc_thunk.bp
+                0x000000000000186e        0x4
+ .text.__x86.get_pc_thunk.bp
+                0x000000000000186e        0x4 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                0x000000000000186e                __x86.get_pc_thunk.bp
+
+.text.__x86.get_pc_thunk.ax
+                0x0000000000001872        0x4
+ .text.__x86.get_pc_thunk.ax
+                0x0000000000001872        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                0x0000000000001872                __x86.get_pc_thunk.ax
+
+.text.__x86.get_pc_thunk.cx
+                0x0000000000001876        0x4
+ .text.__x86.get_pc_thunk.cx
+                0x0000000000001876        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                0x0000000000001876                __x86.get_pc_thunk.cx
+
+.text.__x86.get_pc_thunk.di
+                0x000000000000187a        0x4
+ .text.__x86.get_pc_thunk.di
+                0x000000000000187a        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                0x000000000000187a                __x86.get_pc_thunk.di
+
+.rodata         0x0000000000001880      0x1e9
+ *(.rodata)
+ .rodata        0x0000000000001880        0x5 main.o
+ .rodata        0x0000000000001885        0x5 activity.o
+ *fill*         0x000000000000188a        0x2 
+ .rodata        0x000000000000188c      0x1dd /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+
+.eh_frame       0x0000000000001a6c      0xaec
+ .eh_frame      0x0000000000001a6c       0x7c main.o
+ .eh_frame      0x0000000000001ae8       0x1c activity.o
+                                         0x48 (size before relaxing)
+ .eh_frame      0x0000000000001b04       0x24 ../../../threadstart.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x0000000000001b28       0x24 ../../../hello1.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x0000000000001b4c      0x494 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                                        0x6d0 (size before relaxing)
+ .eh_frame      0x0000000000001fe0      0x530 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                                        0x6ec (size before relaxing)
+ .eh_frame      0x0000000000002510       0x48 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+                                         0x90 (size before relaxing)
+
+.rodata.str1.1  0x0000000000002558       0x20
+ .rodata.str1.1
+                0x0000000000002558        0xe ../../../threadstart.o
+ .rodata.str1.1
+                0x0000000000002566       0x12 ../../../hello1.o
+
+.rel.dyn        0x0000000000002578        0x0
+ .rel.got       0x0000000000002578        0x0 main.o
+ .rel.iplt      0x0000000000002578        0x0 main.o
+ .rel.text      0x0000000000002578        0x0 main.o
+
+.data           0x0000000000002580     0x4b30
+ *(.data)
+ .data          0x0000000000002580        0x2 main.o
+                0x0000000000002580                main_E
+ .data          0x0000000000002582        0x2 activity.o
+                0x0000000000002582                activity_E
+ .data          0x0000000000002584        0x0 ../../../threadstart.o
+ .data          0x0000000000002584        0x0 ../../../hello1.o
+ .data          0x0000000000002584        0x0 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .data          0x0000000000002584        0x4 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .data          0x0000000000002588        0x0 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+ *(.bss)
+ .bss           0x0000000000002588        0x0 main.o
+ .bss           0x0000000000002588        0x0 activity.o
+ .bss           0x0000000000002588        0x0 ../../../threadstart.o
+ .bss           0x0000000000002588        0x0 ../../../hello1.o
+ .bss           0x0000000000002588        0xa /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                0x0000000000002588                pok_allocator_initialized
+                0x000000000000258c                pok_allocator_used_spaces
+                0x0000000000002590                pok_error_nb_reported
+ .bss           0x0000000000002592        0x0 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .bss           0x0000000000002592        0x0 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+ *(COMMON)
+ *fill*         0x0000000000002592        0xe 
+ COMMON         0x00000000000025a0     0x4b10 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                0x00000000000025a0                pok_allocator_memspace
+                0x00000000000065a0                pok_error_reported
+                0x0000000000006be0                errno
+                0x0000000000006c00                pok_allocator_spaces
+                0x00000000000070b0                __partition_end = .
+LOAD main.o
+LOAD activity.o
+LOAD ../../../threadstart.o
+LOAD ../../../hello1.o
+LOAD /home/colored-dye/pok-new/libpok/libpok.a
+LOAD /home/colored-dye/pok-new/libpok//libpok.a
+OUTPUT(part1.elf elf32-i386)
+
+.got            0x00000000000070b0        0x0
+ .got           0x00000000000070b0        0x0 main.o
+
+.got.plt        0x00000000000070b0        0xc
+ .got.plt       0x00000000000070b0        0xc main.o
+                0x00000000000070b0                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x00000000000070bc        0x0
+ .igot.plt      0x00000000000070bc        0x0 main.o
+
+.data.rel.ro.local
+                0x00000000000070c0       0x6c
+ .data.rel.ro.local
+                0x00000000000070c0       0x6c /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+
+.comment        0x0000000000000000       0x2b
+ .comment       0x0000000000000000       0x2b main.o
+                                         0x2c (size before relaxing)
+ .comment       0x000000000000002b       0x2c activity.o
+ .comment       0x000000000000002b       0x2c ../../../threadstart.o
+ .comment       0x000000000000002b       0x2c ../../../hello1.o
+ .comment       0x000000000000002b      0x65c /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .comment       0x000000000000002b      0x2ec /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .comment       0x000000000000002b       0xdc /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 activity.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../../threadstart.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../../hello1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.debug_info     0x0000000000000000     0x60d8
+ .debug_info    0x0000000000000000       0x59 ../../../threadstart.o
+ .debug_info    0x0000000000000059       0x59 ../../../hello1.o
+ .debug_info    0x00000000000000b2     0x42c5 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .debug_info    0x0000000000004377     0x1939 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .debug_info    0x0000000000005cb0      0x428 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.debug_abbrev   0x0000000000000000     0x2463
+ .debug_abbrev  0x0000000000000000       0x57 ../../../threadstart.o
+ .debug_abbrev  0x0000000000000057       0x57 ../../../hello1.o
+ .debug_abbrev  0x00000000000000ae     0x1557 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .debug_abbrev  0x0000000000001605      0xce2 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .debug_abbrev  0x00000000000022e7      0x17c /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.debug_aranges  0x0000000000000000      0x5b0
+ .debug_aranges
+                0x0000000000000000       0x20 ../../../threadstart.o
+ .debug_aranges
+                0x0000000000000020       0x20 ../../../hello1.o
+ .debug_aranges
+                0x0000000000000040      0x2f8 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .debug_aranges
+                0x0000000000000338      0x218 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .debug_aranges
+                0x0000000000000550       0x60 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.debug_line     0x0000000000000000     0x29ee
+ .debug_line    0x0000000000000000       0x89 ../../../threadstart.o
+ .debug_line    0x0000000000000089       0x84 ../../../hello1.o
+ .debug_line    0x000000000000010d     0x1582 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .debug_line    0x000000000000168f     0x1202 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .debug_line    0x0000000000002891      0x15d /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.debug_str      0x0000000000000000     0x1611
+ .debug_str     0x0000000000000000      0x123 ../../../threadstart.o
+                                        0x12f (size before relaxing)
+ .debug_str     0x0000000000000123       0x23 ../../../hello1.o
+                                        0x126 (size before relaxing)
+ .debug_str     0x0000000000000146     0x10c1 /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+                                       0xab7f (size before relaxing)
+ .debug_str     0x0000000000001207      0x375 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+                                       0x1e7a (size before relaxing)
+ .debug_str     0x000000000000157c       0x95 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+                                        0xc65 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x15cf
+ .debug_loc     0x0000000000000000      0x11c /home/colored-dye/pok-new/libpok/libpok.a(core.lo)
+ .debug_loc     0x000000000000011c     0x1472 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)
+ .debug_loc     0x000000000000158e       0x41 /home/colored-dye/pok-new/libpok/libpok.a(arch.lo)
+
+.debug_ranges   0x0000000000000000       0xa8
+ .debug_ranges  0x0000000000000000       0xa8 /home/colored-dye/pok-new/libpok/libpok.a(libc.lo)

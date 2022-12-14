@@ -1,0 +1,19 @@
+[INSTRUMENTATION][CHEDDAR][ARCHI] <address_spaces>
+[INSTRUMENTATION][CHEDDAR][ARCHI] <address_space>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <name>partition0</name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <cpu_name>pokkernel</cpu_name>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <text_memory_size> 0</text_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <stack_memory_size> 0</stack_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <data_memory_size> 0</data_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <heap_memory_size> 0</heap_memory_size>
+[INSTRUMENTATION][CHEDDAR][ARCHI]    <scheduler quantum= "0">[INSTRUMENTATION][CHEDDAR][ARCHI]    POSIX_1003_HIGHEST_PRIORITY_FIRST_PROTOCOL </scheduler>
+[INSTRUMENTATION][CHEDDAR][ARCHI] </address_space>
+POK kernel initialized
+[INSTRUMENTATION][CHEDDAR] <event_table>
+[INSTRUMENTATION][CHEDDAR] <processor>
+[INSTRUMENTATION][CHEDDAR] <name>pok_kernel</name>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 0</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 1</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 2</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 3</task_activation>
+[INSTRUMENTATION][CHEDDAR] <task_activation>   0   task 4</task_activation>
