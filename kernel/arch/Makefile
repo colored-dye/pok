@@ -1,7 +1,5 @@
-TOPDIR=		../../
-
-include $(TOPDIR)/misc/mk/config.mk
--include $(TOPDIR)/misc/mk/common-$(ARCH).mk
+include $(POK_PATH)/misc/mk/config.mk
+-include $(POK_PATH)/misc/mk/common-$(ARCH).mk
 
 ifdef ARCH
 SUBDIRS:=$(ARCH)
@@ -15,7 +13,7 @@ LO_OBJS=
 
 LO_DEPS=	$(ARCH)/$(ARCH).lo
 
-include $(TOPDIR)/misc/mk/objdir.mk
+include $(POK_PATH)/misc/mk/objdir.mk
 
 all: $(LO_TARGET)
 
@@ -33,5 +31,5 @@ distclean: clean
 depend:
 	$(CD) $(ARCH) && $(MAKE) depend
 
-include $(TOPDIR)/misc/mk/rules-common.mk
-include $(TOPDIR)/misc/mk/rules-kernel.mk
+include $(POK_PATH)/misc/mk/rules-common.mk
+include $(POK_PATH)/misc/mk/rules-kernel.mk
